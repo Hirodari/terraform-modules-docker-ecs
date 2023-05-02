@@ -1,6 +1,7 @@
 # export the region
 output "region" {
   value = var.region
+}
 
 # export the project name
 output "project_name" {
