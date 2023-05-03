@@ -1,6 +1,6 @@
 # export the acm certification arn
 output "certificate_arn" {
-  value = ws_acm_certificate.acm_certificate.arn
+  value = aws_acm_certificate.acm_certificate.arn
 }
 
 # export the domain name
