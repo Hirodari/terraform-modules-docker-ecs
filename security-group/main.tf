@@ -43,7 +43,7 @@ resource "aws_security_group" "bastion_security_group" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = var.ssh_ip
+    cidr_blocks = [var.ssh_ip]
   }
 
   ingress {
@@ -51,7 +51,7 @@ resource "aws_security_group" "bastion_security_group" {
     from_port   = 8
     to_port     = 0
     protocol    = "icmp"
-    cidr_blocks = var.ssh_location
+    cidr_blocks = [var.ssh_ip]
   }
 
   egress {
