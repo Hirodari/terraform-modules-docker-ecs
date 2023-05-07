@@ -4,6 +4,6 @@ output "env_file_bucket_name" {
 }
 
 # export the environment file name
-output "env_file_name" {
+output "env_filename" {
   value = var.env_filename
 }
